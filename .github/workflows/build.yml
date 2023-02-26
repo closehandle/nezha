@@ -18,6 +18,15 @@ jobs:
     - name: Build
       run: bash build.sh
 
+    - name: UPX
+      uses: crazy-max/ghaction-upx@v2
+      with:
+        version: latest
+        files: |
+          ./release/nezha-agent
+          ./release/nezha-dashboard
+        args: --lzma
+
     - name: Upload
       uses: actions/upload-artifact@v3
       with:
