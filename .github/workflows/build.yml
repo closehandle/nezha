@@ -12,6 +12,7 @@ jobs:
     - name: Setup Go
       uses: actions/setup-go@v3
       with:
+        go-version: stable
         check-latest: true
 
     - name: Build
