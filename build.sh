@@ -10,5 +10,5 @@ go build -a -trimpath -asmflags '-s -w' -ldflags '-s -w' -o nezha-agent ./cmd/ag
 go build -a -trimpath -asmflags '-s -w' -ldflags '-s -w' -o nezha-dashboard ./cmd/dashboard || exit $?
 
 mv -f nezha-agent ../release
-mv -f nazha-dashboard ../release
+mv -f nezha-dashboard ../release
 exit 0
