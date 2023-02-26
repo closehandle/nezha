@@ -4,7 +4,7 @@ rm -fr release && mkdir release
 git clone https://github.com/naiba/nezha || exit $?
 cd nezha
 
-export CGO_ENABLED='0'
+export CGO_ENABLED='1'
 export GOROOT_FINAL='/usr'
 export GOOS='linux'
 export GOARCH='amd64'
