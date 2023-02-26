@@ -6,7 +6,7 @@ cd nezha
 
 export CGO_ENABLED='0'
 export GOROOT_FINAL='/usr'
-export GOOS='windows'
+export GOOS='linux'
 export GOARCH='amd64'
 
 go get -d -t -u -v ./... || exit $?
